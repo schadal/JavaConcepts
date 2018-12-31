@@ -5,13 +5,7 @@ import com.ext.services.ExternalBookDetailsService;
 
 public class BookService {
 
-	private ExternalBookDetailsService service = 
-			new ExternalBookDetailsService() {
-		
-		public Book lookup(String isbn) {
-			return new Book();
-		}
-	};
+	private ExternalBookDetailsService service;
 	
 	public String getLocatorCode(String isbn) {
 		Book book = service.lookup(isbn);

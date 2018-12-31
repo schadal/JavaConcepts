@@ -20,8 +20,7 @@ class BookServicesTest {
 				return new Book(isbn, "Of Mice and Men","Stenbook");
 			}
 		};
-		
-		
+				
 		String isbn = "0140177396";
 		BookService bookService = new BookService();
 		bookService.setService(externalService);
